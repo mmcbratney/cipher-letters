@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method · Cipher Letters</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">Cipher Letters</a>
+  <nav><a href="index.html">All letters</a><a href="method.html">Method</a><a href="about.html">About</a></nav>
+</header>
+<main>
+<h1>How these letters were read</h1>
+<p class="dek">The same steps for every letter, so that a reader can tell what was found from what was hoped for.</p>
+
+<h2>1. Look for earlier work first</h2>
+<p>Before any decoding we search the Cyphersolver catalogue, the DECODE database, the published key collections, the relevant editions and the literature for an earlier reading. Each page says what was searched and what was not reached. Not finding an earlier reading is not proof that none exists.</p>
+
+<h2>2. Transcribe, then freeze</h2>
+<p>The cipher signs are transcribed from the archive's images and the transcription is frozen (fingerprinted with SHA-256, and for most letters time-stamped) before any decoding. Later corrections are listed, never silently folded in.</p>
+
+<h2>3. Find the key</h2>
+<p>Each page names how the key was found, in George Lasry's categories:</p>
+<ul>
+  <li><strong>Key recovered from the ciphertext alone:</strong> a solver (simulated annealing scored on period language statistics) or a model works on the frozen transcription with no crib and no plaintext of the time.</li>
+  <li><strong>Key recovered from adjacent plaintext:</strong> a contemporary decipherment, a gloss between the lines or a deciphered sister letter gives the key.</li>
+  <li><strong>Read with a known key:</strong> the key survives (in the archive, or published by a scholar), and the work is the reading.</li>
+  <li><strong>Read after matching with an external key:</strong> a key known from another source is found to fit once it is adjusted (for Ormond, a key of 1680 with every number shifted by seven).</li>
+</ul>
+
+<h2>4. Decode once, and judge strictly</h2>
+<p>The frozen transcription is decoded once with the frozen key. That first pass is the figure of record. Words (or cipher units, where a page says so) are counted as read, emended or unread; every doubtful word and supplied letter counts as a hole. Our own line is 65% of a letter's words read as sense: below it, a letter is normally filed as "decoded, not read". Ormond's twenty figures (50%) are the exception here: the repository classes that short test as read in part.</p>
+
+<h2>5. Controls</h2>
+<p>Where the text is long enough, the real key is compared with thousands of shuffled keys (usually 5,000, at two fixed seeds). A result counts only if almost none of the shuffled keys does as well. Several pages also report a blind second transcription by a session that never saw the key.</p>
+
+<h2>6. Independent check, then publish</h2>
+<p>Every letter here was filed in <a href="https://github.com/dbourdeau/cyphersolver">Cyphersolver</a>, as an issue or a pull request with its files. The maintainer, Daniel Bourdeau, reviewed each filing before merging; the integration checks that rerun the decode and the counts were often made by AI agents for him, and each page says which. Figures on these pages are the merged figures.</p>
+
+<h2>What AI did, and what a person did</h2>
+<p>The transcriptions, solving, reading, translation and counting were done by Claude (Anthropic) models, directed by Malcolm McBratney (for the Ridolfi letter, by Brice Dudout). Some keys came from others: Julius Kohn's of 1889 for Gerlach, S. Tomokiyo's reconstruction for Ormond. Unless a page says otherwise, no person has read the signs without AI. The maintainer's review is the main outside check, and each page states who compared what with the images.</p>
+</main>
+<footer class="site">Cipher Letters · Malcolm McBratney, Brisbane, with Claude (Anthropic) · Text CC BY 4.0 · Images stay with their archives and are linked, not copied.</footer>
+</body>
+</html>
