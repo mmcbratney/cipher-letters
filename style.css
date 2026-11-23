@@ -39,3 +39,14 @@ footer.site{border-top:1px solid var(--rule);padding:1rem 1.2rem;font-family:sys
 .card p{margin:0;font-size:.9rem;color:var(--muted)}
 .card .st{display:inline-block;margin-top:.4rem;font-family:system-ui,sans-serif;font-size:.75rem;color:var(--ok)}
 @media (max-width:560px){.glance dl{grid-template-columns:1fr}.glance dt{padding-top:.5rem}}
+figure.leaf{margin:1.4rem 0;background:#fff;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+figure.leaf img{display:block;width:100%;height:auto;background:#eee}
+figure.leaf .decoded{border-top:1px solid var(--rule);padding:.7rem 1rem;background:var(--box)}
+figure.leaf .decoded h4{margin:0 0 .4rem;font-family:system-ui,sans-serif;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+figure.leaf .decoded .row{display:grid;grid-template-columns:7.5rem 1fr;gap:.2rem .8rem;margin:.25rem 0;font-size:.95rem}
+figure.leaf .decoded .k{font-family:system-ui,sans-serif;font-size:.75rem;color:var(--muted);padding-top:.2rem}
+figure.leaf .decoded .ci{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem;word-break:break-word}
+figure.leaf .decoded .pl{font-style:italic}
+figure.leaf figcaption{padding:.55rem 1rem;font-family:system-ui,sans-serif;font-size:.78rem;color:var(--muted);border-top:1px solid var(--rule)}
+@media (max-width:560px){figure.leaf .decoded .row{grid-template-columns:1fr}}
+.card img.th{display:block;width:calc(100% + 2rem);margin:-.9rem -1rem .6rem;height:7.5rem;object-fit:cover;border-bottom:1px solid var(--rule);border-radius:6px 6px 0 0}
