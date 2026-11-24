@@ -28,7 +28,7 @@
   <dt>Held at</dt><dd>Wellcome Collection, London, MS.309 (b19695561): <a href="https://wellcomecollection.org/works/vq9e75rz">catalogue record</a></dd>
   <dt>Cipher</dt><dd>Homophonic substitution on pictorial signs: 52 sign labels, one to three (once four) per letter, with a word divider</dd>
   <dt>Read</dt><dd>pp.7-10 and 13-19, and the opening lines of pp.40, 107, 112, 115, 156 and 177: 17 of about 172 cipher pages. 1,260 of 1,394 words carry no doubt mark, bracket or hole (90.4%).</dd>
-  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gerlach1252">Cyphersolver, targets/gerlach1252</a> (catalogue 1252, <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a>); maintainer's write-up: <a href="https://cyphersolver.com/gerlach1252.html">gerlach1252</a></dd>
+  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gerlach1252">Cyphersolver, targets/gerlach1252</a> (catalogue 1252, <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a>; later tests in PR #686 and PR #930); maintainer's write-up: <a href="https://cyphersolver.com/gerlach1252.html">gerlach1252</a></dd>
 </dl></div>
 
 <figure class="leaf">
@@ -81,6 +81,7 @@
   <li><strong>Decoder re-run:</strong> at integration (12 Nov 2026) a decoder written afresh from the key table reproduced all 348 decoded lines from the transcription.</li>
   <li><strong>Images:</strong> Kohn's two leaves and the first six lines of p.8 (130 signs) were compared with the Wellcome images and agree. The other pages were not compared at that check.</li>
   <li><strong>Brice Dudout's verification (14 Nov 2026, PR #570):</strong> his own decoder gave 348 of 348 lines. He re-read p.7 on the full-size image: all 45 doubtful figure-4 signs agree with their shapes, and three signs change (souil, wolet, ruret). Doubtful signs on p.7 went from 54 to 7. Lines L07, L08, L12 and L13 (about 75 signs) were then checked on the same image and agree.</li>
+  <li><strong>The project's check of pp.141-160 (PR #930, 24 Nov 2026), by a model session, not a person:</strong> a decoder written afresh gives the filed letters on 621 of 621 lines; the fingerprints in the freeze files match; the judges' figures re-add exactly; the shuffle controls give the same results when re-run; and 348 signs on four scans agree with the blind transcription on the images. The order of events rests on the contributor's record. Class and counts were left unchanged.</li>
   <li><strong>Not re-run:</strong> the contributor's word-list test (77% to 96% of decoded words found in a 16th-century word list per page; 1,000 shuffled keys per page at most 30%) and his agreement figures between transcribers. The lists and scripts were not sent.</li>
 </ul>
 
@@ -97,6 +98,17 @@
 </table>
 <p>The p.7 figure rests on the marks of the reading only. Five more words of that page stand on a sign still marked doubtful in the transcription; with them p.7 would be 87 of 96 (90.6%). The contributor's own figures count signs, not words (for example p.13 515 of 536 signs, 96.1%), and are higher.</p>
 <p>Two later tests of the key, on pp.124-137 and pp.138, 139, 140 and 150 (16 Nov 2026), were decoded blind and judged letter by letter: 5,667 of 6,097 letters (92.9%) and 1,573 of 1,652 (95.2%). Both passed a shuffled-key control (0 of 5,000 at two seeds). The repository's reading check rates both "decoded, not read", so they are not counted above.</p>
+<h3>pp.141-160: three blind batches (24 Nov 2026, PR #930)</h3>
+<p>Twenty-eight further pages were decoded with the same key (Kohn's, with two of his signs added on 16 Nov): pp.141-149, 151-155 and 157, a second run of pages numbered 148a-157a, and pp.158-160. A separate Claude Fable session copied the signs from the Wellcome images with a sheet of neutral labels and no letter values, and was told not to decipher. Each batch was frozen, decoded once with no emendation, and judged letter by letter by a further Claude session that saw only the decoded letters.</p>
+<table>
+  <tr><th>Batch</th><th>Pages</th><th>Letters that make sense (strict judge)</th></tr>
+  <tr><td>A</td><td>pp.141-149</td><td>4,054 of 4,085 = 99.2%</td></tr>
+  <tr><td>B</td><td>pp.151-155, 157, 148a-150a</td><td>3,875 of 3,973 = 97.5%</td></tr>
+  <tr><td>C</td><td>pp.151a-157a, 158-160</td><td>3,965 of 4,007 = 98.95% (98.20% if the decode's f for long s is counted as a slip)</td></tr>
+  <tr><td>All three</td><td></td><td>11,894 of 12,065 = 98.58%</td></tr>
+</table>
+<p>Each batch passed the shuffled-key control (0 of 5,000 at two seeds). The repository's reading check gives the reading a clean share of 0.466, "marginal", so these pages too are <strong>decoded, not read</strong>, and are not counted above. The project's check counted about 2,639 words, 92.9% with no judge's mark (by the judges' own word breaks, so approximate). What keeps it at "decoded, not read", in the check's words: the reading is the judges' line-by-line text, the English is a page summary, and no doubtful sign was checked on the images.</p>
+<p>The pages run on with gold: dissolved in aqua regis, brought to an oil with spirit of wine and sal armoniack, digested in horse dung; a red precipitate multiplied and used for projection with borax; salt of tartar made snow-white, the "arcanum philosophorum"; and a gold calx parted with aqua fortis. <span class="tag">from Claude's page summaries; unchecked</span></p>
 
 <h2>What remains uncertain</h2>
 <ul>
@@ -104,19 +116,20 @@
   <li>p.9 lines 21-25 and two lines of p.10 are stained or damaged in the scan.</li>
   <li>Pages 11-12, the inserted leaf, have no scan.</li>
   <li>Pages 16-18 rest on single readers from other model families (p.18 two, adjudicated) and are not rated.</li>
-  <li>Signs on Kohn's sheet not yet seen in the text (for e, x, y and z) are untested.</li>
-  <li>The rest of the cipher, pp.20-178, is not read, apart from the opening lines above and the two blind tests.</li>
+  <li>Signs on Kohn's sheet not yet seen in the text (for e, x, y and z) are untested. The project's check of pp.141-160 found one sign, written seven times as an unknown mark or as l, where the sense wants x (fix, borax, exempel); it has not yet been compared with Kohn's two x signs.</li>
+  <li>The slips of the first pass on pp.141-160 (155 letters judged a slip, 16 no sense) stay in the decode of record; they have not been re-read on the images.</li>
+  <li>The rest of the cipher, pp.20-178, is not read, apart from the opening lines above and the three blind tests (pp.124-160); pp.161-170 are next.</li>
 </ul>
 
 <h2>Who did what</h2>
-<p><strong>Julius Kohn</strong> made the key in 1889. Malcolm McBratney (Brisbane), working with Claude (Anthropic), set up the key as a table and contributed the transcription, decode, reading and translation (issue #439). GPT-6 Astra/Sol and Gemini 4 Argon made the first passes of pp.16-18 and independent passes of pp.8-10 and 13, as he names them. Daniel Bourdeau found the manuscript for the catalogue (entry 1252). Brice Dudout verified the decode and re-read p.7 on the image (PR #570). The 16 Nov 2026 tests were checked at integration by a model session for the project (PR #686).</p>
-<div class="caveat-box">Model sessions did the transcriptions, the decode and the reading. Brice Dudout's re-reading of p.7 used Claude Opus 5.5. No person has read the signs without AI, and no person has checked the pp.124-150 transcriptions, decodes or English.</div>
+<p><strong>Julius Kohn</strong> made the key in 1889. Malcolm McBratney (Brisbane), working with Claude (Anthropic), set up the key as a table and contributed the transcription, decode, reading and translation (issue #439). GPT-6 Astra/Sol and Gemini 4 Argon made the first passes of pp.16-18 and independent passes of pp.8-10 and 13, as he names them. Daniel Bourdeau found the manuscript for the catalogue (entry 1252). Brice Dudout verified the decode and re-read p.7 on the image (PR #570). The 16 Nov 2026 tests were checked at integration by a model session for the project (PR #686), as were the pp.141-160 batches of 24 Nov 2026 (PR #930), for which Claude Fable made the blind transcriptions and separate Claude sessions the judging.</p>
+<div class="caveat-box">Model sessions did the transcriptions, the decode and the reading. Brice Dudout's re-reading of p.7 used Claude Opus 5.5. No person has read the signs without AI, and no person has checked the pp.124-160 transcriptions, decodes or English.</div>
 
 <h2>Sources</h2>
 <ol class="refs">
   <li>Wellcome Collection, London, MS.309: <a href="https://wellcomecollection.org/works/vq9e75rz">catalogue record</a>; images through Wellcome IIIF (iiif.wellcomecollection.org/presentation/b19695561), Public Domain Mark.</li>
   <li>Cyphersolver, <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gerlach1252">targets/gerlach1252</a>: key table, transcriptions, decodes, readings, translations, counts and checks.</li>
-  <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a> (the contribution).</li>
+  <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a> (the contribution) and <a href="https://github.com/dbourdeau/cyphersolver/pull/930">PR #930</a> (pp.141-160).</li>
   <li>Cyphersolver write-up: <a href="https://cyphersolver.com/gerlach1252.html">gerlach1252</a>.</li>
 </ol>
 </main>

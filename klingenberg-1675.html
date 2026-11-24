@@ -28,7 +28,7 @@
   <dt>Held at</dt><dd>Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling, Almindelig del: Conrad Biermanns kopibog over udgaaede skrivelser til danske ministre i udlandet, 1675 (Daisy heid 2130515, unit S-1418), images 43-256; and the drafts unit that follows it, Koncepter til skrivelser fra Conrad Biermann, 1675 Juli-Sept, images 267-280</dd>
   <dt>Cipher</dt><dd>Three layers inside clear German: 29 letter signs, a syllable table 432-525 in alphabetical order, and numbered word codes (106 with a value in the final map)</dd>
   <dt>Read</dt><dd>3,648 of 4,709 cipher tokens (77.47%) over the eleven counted letters; only the short letter of 1 June reaches 95%</dd>
-  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/klingenberg1675">Cyphersolver, targets/klingenberg1675</a> (issue #424, PR #455, PR #490, PR #496; catalogue entry 465, narrowed); maintainer's write-up: <a href="https://cyphersolver.com/klingenberg1675.html">klingenberg1675</a></dd>
+  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/klingenberg1675">Cyphersolver, targets/klingenberg1675</a> (issue #424, PR #455, PR #490, PR #496, PR #931; catalogue entry 465, narrowed); maintainer's write-up: <a href="https://cyphersolver.com/klingenberg1675.html">klingenberg1675</a></dd>
 </dl></div>
 
 <figure class="leaf">
@@ -109,19 +109,22 @@
 </table>
 <p><strong>Limits.</strong> The intended words were written after decoding by the same model that built the key, and the transcriber knew the key. There is no blind second transcription of these eleven. Counting only words built from signs and syllables, with no word code, gives 1,334 of 4,709 (28.3%). The 77.47% is the headline; the 28.3% is the floor.</p>
 <p><strong>Further passages, not in the count.</strong> 22 passages of the drafts: the first reader 6,103 of 8,587 tokens (71.07%) and 2,561 of 3,386 word units (75.63%); blind second readers 2,555 of 3,260 word units (78.37%). No passage reaches 95%. Ten more passages were parked by the first reader and are not shown. On 16 Nov 2026 two blind decodes were added as "decoded, not read": the letter body 134R-136L (88.47% of units) and the opening pages 41R-43R of a draft (95.04% of decode units, 88.8% of words). A blind attempt on 253R-254L failed (59.2%).</p>
+<p><strong>The postscript on images 72L-72R (24 Nov 2026, PR #931), not in the count.</strong> A short P.S. to the late-July draft that the first reader had parked on 12 Nov (64.71%) was tried again blind with the key unchanged: a separate Claude Fable session copied the signs with neutral labels and no values, the copy was frozen, decoded once and judged by another session. 104 of 117 cipher units make sense (88.89% strict); by words, 33 of 46 (71.7%). Shuffled keys: 0 of 5,000 at two seeds. It is filed <strong>decoded, not read</strong>: the cipher runs are one to twenty words between clear German that is not transcribed. The judge's gist: the sailors are to be got in hand and sent over little by little; good captains and [?] lieutenants are to be taken on; the recruiting [?] does not go forward ([?] = the judge's doubt).</p>
+<p>The project's check (by a model session, not a person) reproduced the decode on all five runs and found every number and sign agree with the image. It also read the clear word before the second run as "nigst", most likely the end of "schleunigst", not "nicht" as the transcription has it, and the clear text before the fourth run as "M. Müller weilen [sie] vielleicht", so the recruiting clause is a supposition tied to M. Müller, not a report. To raise the P.S. to read in part, it wants the clear German transcribed into the reading, joining to the draft it belongs to, and a reading review.</p>
 
 <h2>What remains uncertain</h2>
 <ul>
   <li>Word codes with no value: 54 tokens of the 4 May letter under v3, 25 under v4. More letters or Klingenberg's own deciphered letterbook would fix them.</li>
   <li>In the three drafts the reader wrote every hash-like sign as the c sign. 96 failed tokens differ from the intended word only by c where g is wanted. A blind re-reading with a ledger is still owed.</li>
   <li>The sixteen letters used to build the key have no reading and no count.</li>
+  <li>In the 72L-72R postscript, the bar-topped sign read as z where n is wanted (twice), the code 459 or 454, and six codes with no value are open.</li>
   <li>The clear text between the cipher passages is read approximately.</li>
   <li>The intended words and the English have not been checked by a German reader.</li>
   <li>Klingenberg's legation papers were not checked, so priority is not established.</li>
 </ul>
 
 <h2>Who did what</h2>
-<p>Malcolm McBratney (Brisbane) directed the work and set its rules, with Claude (Anthropic) sessions choosing the letters from the repository's survey, transcribing, rebuilding the key, reading and checking. He sent it as issue #424 and PR #455, with further passages in PR #490 and PR #496.</p>
+<p>Malcolm McBratney (Brisbane) directed the work and set its rules, with Claude (Anthropic) sessions choosing the letters from the repository's survey, transcribing, rebuilding the key, reading and checking. He sent it as issue #424 and PR #455, with further passages in PR #490 and PR #496, and the 72L-72R postscript in PR #931 (merged 24 Nov 2026).</p>
 <p>Daniel Bourdeau's survey of the copybook and its image list (targets/biermann1675) are where the letters were chosen from. His review on issue #424 found the two misread numerals of the 4 May letter, the true count of 54 open-code tokens (the issue had said 42) and the four-syllable d row (the issue had said five). The K55 key and the Høeg and Meyercron letters are the work of the repository and of Brice Dudout.</p>
 <div class="caveat-box">Claude sessions made the transcriptions, the key, the intended words, the readings and the English. The image comparisons in the integration checks were made by a model check, not a person. No person has read the letters without AI, and no German reader has checked the readings.</div>
 
