@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Key of Solomon in a secret alphabet: Basel UB, AN V 9 (17th century) · Cipher Letters</title>
+<meta name="description" content="A seventeenth-century Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet (Basel University Library, AN V 9). Key recovered from the volume's own clear copy; three held-out passages decoded, not read. Submitted, under review at Cyphersolver.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">Cipher Letters</a>
+  <nav><a href="index.html">All letters</a><a href="method.html">Method</a><a href="about.html">About</a></nav>
+</header>
+<main>
+<p class="crumb"><a href="index.html">Cipher Letters</a> › Basel, Universitätsbibliothek › 17th century</p>
+<h1>A Key of Solomon in a secret alphabet: Basel UB, AN V 9 (17th century)</h1>
+<p class="dek">A book of conjurations and planetary seals written in invented signs, with the same text in clear further on in the same volume. The key was recovered here by lining the cipher up with that clear copy. The decode does not read as sentences: it is <strong>decoded, not read</strong>. The text itself was never secret, since the volume carries its own clear copy and its own key leaf.</p>
+<div class="badges">
+  <span class="badge status">Decoded, not read: 113 of 225 words (0.502)</span>
+  <span class="badge">Key recovered from adjacent plaintext (the volume's clear copy)</span>
+  <span class="badge">Submitted, under review at Cyphersolver (PR #957)</span>
+  <span class="badge caveat">AI-assisted; no person or Latinist has checked it</span>
+</div>
+
+<div class="glance"><dl>
+  <dt>Book</dt><dd>"Clavicula Salomonis, Septem Sigilla Planetarum", 17th century, Latin; 180 leaves in two parts</dd>
+  <dt>Contents</dt><dd>ff. 3r-96v the Clavicula in a secret alphabet, with pentacles; f. 99r a key to the signs with notes in Danish, f. 98r a German translation of it; ff. 101r-155r the same text in clear; ff. 158r-162r the seven planetary seals in cipher, ff. 166r-170r in clear (from Martin Steinmann's description)</dd>
+  <dt>Held at</dt><dd>Universitätsbibliothek Basel, UBH AN V 9 (old shelfmark K IV 19). Images: <a href="https://doi.org/10.7891/e-manuscripta-185551">e-manuscripta.ch</a>, Public Domain Mark</dd>
+  <dt>Cipher</dt><dd>Invented and digit-like signs for Latin letters, with signs for letter groups (et, er, con, tur …), a few whole words (quod, qui, non) and marks for m and n</dd>
+  <dt>Read</dt><dd>Not read. Three held-out passages decoded once with the frozen key: 113 of 225 words read as sense (50.2%), and no sentence is clean</dd>
+  <dt>Record</dt><dd>Submitted, under review at Cyphersolver: <a href="https://github.com/dbourdeau/cyphersolver/pull/957">PR #957</a> (open); files on the <a href="https://github.com/mmcbratney/cyphersolver/tree/baselANV9-adjacent/targets/baselanv9">contributor's branch, targets/baselanv9</a>. A new target, not in the catalogue</dd>
+</dl></div>
+
+<h2>What is new and what was known</h2>
+<p>Searched before any transcription: Cyphersolver's issues and repository, the DECODE database, web searches in English, German and Danish, Klaus Schmeh's list of encrypted books, the Clavicula literature on the web, Steinmann's description and the library record. No reading, edition or study of this cipher was found.</p>
+<p>What was always known: the library's own description says the cipher text is the same as the clear text later in the volume, and that f. 99r holds the key. So the content is not new. What this work adds is a test: a key recovered blind from two cipher leaves and their clear copy, frozen, and tried once on passages it had not seen.</p>
+<p>Not checked: Skinner and Rankine's <em>Veritable Key of Solomon</em> (2008), Mathers (1889) and Boudet's census of Clavicula manuscripts, in print.</p>
+
+<h2>What it says</h2>
+<p class="legend">From the volume's clear copy, translated by Claude; not checked by a Latinist. This is what the cipher should give, not what the decode gives.</p>
+<p>The passages tried are a conjuration "by the Annunciation of Christ, by the coming of Christ, by the Nativity …"; the seal of Jupiter, cast in English tin on a day of Jupiter when the Moon enters Libra and kept in sky-blue silk, which "wins love, grace, friendship and favour with all men"; and the rims of two pentacles. As decoded, one pentacle has a hole where "non" stands, so it says the opposite of the clear copy.</p>
+<blockquote><span class="orig">"Fit ex o[?]imi anglico stanno …"</span><span class="tr">As decoded: "It is made of [a hole] English tin …"; the clear copy has "the best English tin"</span></blockquote>
+
+<h2>How it was decoded</h2>
+<ol>
+  <li><strong>24 Nov 2026: prior art first</strong>, then a split written down before any key work: training on cipher ff. 4r-4v against their clear copy; held out f. 15r lines 1-12, f. 159r (the seal of Jupiter) and two pentacle rims on f. 34r.</li>
+  <li><strong>Transcription</strong> of the signs by shape with neutral labels, by one Claude Opus 5.5 session, and frozen. The record states the limits: the training leaves were copied with the clear copy beside them, and the held-out leaves by a reader who already knew most of the system.</li>
+  <li><strong>The key from the training leaves only</strong>, by lining cipher words up with clear words and fitting a model of the signs. The key leaf f. 99r was held back until the key was frozen.</li>
+  <li><strong>One decode</strong> of the held-out passages, and a separate strict judge (Claude Opus 5.5) who saw only the decode and scored each letter.</li>
+  <li><strong>Afterwards</strong>, the key leaf was compared with the recovered key: it agrees on 46 of the 52 values it covers.</li>
+</ol>
+
+<h2>How much is decoded?</h2>
+<table>
+  <tr><th>Passage (held out)</th><th>Letters, strict judge</th><th>Words read as sense</th></tr>
+  <tr><td>f. 15r lines 1-12, conjurations</td><td>229 of 367 = 62.4% (under our 65% line)</td><td>35 of 77</td></tr>
+  <tr><td>f. 159r, seal of Jupiter</td><td>470 of 702 = 67.0%</td><td>70 of 133</td></tr>
+  <tr><td>f. 34r, two pentacle rims</td><td>48 of 69 = 69.6%</td><td>8 of 15</td></tr>
+</table>
+<p>That first pass is the figure of record. The decode gives back 988 of the 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense, and the repository's sentence check finds no clean sentence in any passage. So each passage is decoded, not read. Shuffled keys: 0 of 5,000 at each of two seeds.</p>
+<p>Later passes, reported apart and not replacing the figure of record: with the volume's own key leaf (a known key, so a different kind of result), a third pass scored 389 of 415 letters (93.7%) on a fresh held-out passage, f. 25r. Passes 4 and 5, made for the maintainers' review, re-looked at doubtful signs. Every text still stands as decoded, not read.</p>
+
+<h2>What remains uncertain</h2>
+<ul>
+  <li><strong>The holes</strong>: 112 of 225 words in the first pass, mostly from a few systematic faults (one sign read b where the sense wants a; c for h; a final t read as n).</li>
+  <li><strong>Most of the volume</strong> is not transcribed: ff. 3r-96v and 158r-162r beyond the passages tried.</li>
+  <li><strong>The key leaf's Danish</strong> is read only by the transcriber, not checked.</li>
+  <li><strong>The decode and the English</strong> have not been checked by a person or a Latinist.</li>
+</ul>
+
+<h2>Who did what</h2>
+<p>Malcolm McBratney (Brisbane) directed the work and set its rules, working with Claude (Anthropic): Claude Opus 5.5 transcribed, recovered the key, judged and assembled the folder; the third pass was transcribed and decoded by Claude Fable 5.2. He sent it as PR #957, still open; Daniel Bourdeau's reviews led to passes 4 and 5. The library's own description and open images made it possible.</p>
+<div class="caveat-box">AI models made the transcription, the key, the decode, the judging and the English. No person and no Latinist has checked any of it, and the maintainers have not yet merged the pull request. This is a decoding, not a reading.</div>
+
+<h2>Sources</h2>
+<ol class="refs">
+  <li>Universitätsbibliothek Basel, UBH AN V 9: <a href="https://doi.org/10.7891/e-manuscripta-185551">e-manuscripta.ch, doi:10.7891/e-manuscripta-185551</a>; <a href="https://www.e-manuscripta.ch/i3f/v20/5353221/manifest">IIIF manifest</a>.</li>
+  <li>Martin Steinmann, unprinted description: <a href="https://ub.unibas.ch/digi/a100/kataloge/mscr/mscr_div_gr/BAU_9972848358705504_cat.pdf">Universitätsbibliothek Basel catalogue PDF</a>.</li>
+  <li>Contributor's branch, <a href="https://github.com/mmcbratney/cyphersolver/tree/baselANV9-adjacent/targets/baselanv9">targets/baselanv9</a>: prior-art record, split, transcriptions, key, decode, judging, key-leaf comparison and passes 2 to 5.</li>
+  <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/pull/957">PR #957</a> (open).</li>
+</ol>
+</main>
+<footer class="site">Cipher Letters · Malcolm McBratney, Brisbane, with Claude (Anthropic) · Text CC BY 4.0 · Archive images are shown under each archive's own licence, named in each caption. · The checks were done with AI tools and no person checked each record by hand.</footer>
+</body>
+</html>
