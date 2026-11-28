@@ -15,10 +15,11 @@
 <main>
 <p class="crumb"><a href="index.html">Cipher Letters</a> › London, Wellcome Collection › 1572-76</p>
 <h1>Flowers of sulphur and the corruption of Sol: Johann Gerlach's cipher recipe book, 1572-76</h1>
-<p class="dek">A German alchemist's notebook written in pictorial signs. The key is Julius Kohn's, made in 1889 and filed in the volume. What is new here is the reading of seventeen pages, for which no published reading was found.</p>
+<p class="dek">A German alchemist's notebook written in pictorial signs. The key is Julius Kohn's, made in 1889 and filed in the volume. What is new here is the reading of seventeen pages, for which no published reading was found, and since 28 Nov 2026 a decode of every remaining cipher page.</p>
 <div class="badges">
   <span class="badge status">Read in part: 1,260 of 1,394 words (0.904)</span>
   <span class="badge">Read with a known key (Kohn 1889)</span>
+  <span class="badge">pp.20-178 decoded, not read: 96.0% of letters (PR #1047, under review)</span>
   <span class="badge caveat">AI-assisted; no person has read the signs without AI</span>
 </div>
 
@@ -27,8 +28,8 @@
   <dt>Book</dt><dd>Johann Gerlach (Girlach), <em>Occulta scripta chymica</em> (1572-76): 178 handwritten pages of the "Secreta alchemica" in cipher (pp.7-178; pp.179-207 partly). German alchemy and medicine; no addressee.</dd>
   <dt>Held at</dt><dd>Wellcome Collection, London, MS.309 (b19695561): <a href="https://wellcomecollection.org/works/vq9e75rz">catalogue record</a></dd>
   <dt>Cipher</dt><dd>Homophonic substitution on pictorial signs: 52 sign labels, one to three (once four) per letter, with a word divider</dd>
-  <dt>Read</dt><dd>pp.7-10 and 13-19, and the opening lines of pp.40, 107, 112, 115, 156 and 177: 17 of about 172 cipher pages. 1,260 of 1,394 words carry no doubt mark, bracket or hole (90.4%).</dd>
-  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gerlach1252">Cyphersolver, targets/gerlach1252</a> (catalogue 1252, <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a>; later tests in PR #686 and PR #930); maintainer's write-up: <a href="https://cyphersolver.com/gerlach1252.html">gerlach1252</a></dd>
+  <dt>Read</dt><dd>pp.7-10 and 13-19, and the opening lines of pp.40, 107, 112, 115, 156 and 177: 17 of about 172 cipher pages. 1,260 of 1,394 words carry no doubt mark, bracket or hole (90.4%). Every other cipher page (pp.20-178) is now decoded blind but not yet read: see below.</dd>
+  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gerlach1252">Cyphersolver, targets/gerlach1252</a> (catalogue 1252, <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a>; later tests in PR #686 and PR #930; pp.20-123 and 161-178 in <a href="https://github.com/dbourdeau/cyphersolver/pull/1047">PR #1047</a>, open); dated record of pp.20-178 on Zenodo: <a href="https://doi.org/10.5281/zenodo.24614771">10.5281/zenodo.24614771</a>; maintainer's write-up: <a href="https://cyphersolver.com/gerlach1252.html">gerlach1252</a></dd>
 </dl></div>
 
 <figure class="leaf">
@@ -45,7 +46,7 @@
 <h2>What is new and what was known</h2>
 <p>The cipher was broken long ago. Julius Kohn wrote a key into the volume in 1889, and the Wellcome catalogue says "Kohn's key inserted". The key is two leaves of sign groups in rows, dated 1889, with no letters written beside them.</p>
 <p>No published reading of the text was found in online searches (10-11 Nov 2026). German specialist literature, Kohn's papers and the Wellcome files were not checked. So this is a reading with an existing key, not a first break.</p>
-<p>What this work adds: a sign-by-sign transcription of seventeen pages, a decode with Kohn's key set up as a table, a reading in Early New High German and an English translation. The rest of the cipher (pp.20-178) is not read, and stays in the Cyphersolver catalogue as entry 1252, narrowed.</p>
+<p>What this work adds: a sign-by-sign transcription of seventeen pages, a decode with Kohn's key set up as a table, a reading in Early New High German and an English translation. The rest of the cipher (pp.20-178) is not read. On 28 Nov 2026 every remaining cipher page was decoded blind with the same key (below); those pages are filed as decoded, not read, and are under review.</p>
 
 <h2>The book</h2>
 <p>The manuscript is a notebook of recipes, not a letter. Its cipher pages hold alchemical and medical recipes. The pages read here run from medicines made of sulphur and antimony to the preparation of gold.</p>
@@ -110,6 +111,28 @@
 <p>Each batch passed the shuffled-key control (0 of 5,000 at two seeds). The repository's reading check gives the reading a clean share of 0.466, "marginal", so these pages too are <strong>decoded, not read</strong>, and are not counted above. The project's check counted about 2,639 words, 92.9% with no judge's mark (by the judges' own word breaks, so approximate). What keeps it at "decoded, not read", in the check's words: the reading is the judges' line-by-line text, the English is a page summary, and no doubtful sign was checked on the images.</p>
 <p>The pages run on with gold: dissolved in aqua regis, brought to an oil with spirit of wine and sal armoniack, digested in horse dung; a red precipitate multiplied and used for projection with borax; salt of tartar made snow-white, the "arcanum philosophorum"; and a gold calx parted with aqua fortis. <span class="tag">from Claude's page summaries; unchecked</span></p>
 
+<h3>pp.20-123 and 161-178: twelve blind batches (28 Nov 2026, PR #1047, under review)</h3>
+<p>The remaining cipher pages were done the same way as pp.141-160: a Claude session copied the signs from the Wellcome images with neutral labels and no letter values; each batch was frozen, decoded once with Kohn's key (unchanged), and judged letter by letter by a separate Claude session that saw only the decoded letters. The figures below are the script's re-count of the judges' sheets, first pass, with no emendation.</p>
+<table>
+  <tr><th>Batch</th><th>Pages</th><th>Letters that make sense (strict judge)</th></tr>
+  <tr><td>D</td><td>pp.20-29</td><td>4,469 of 4,640 = 96.3%</td></tr>
+  <tr><td>E</td><td>pp.30-38 (p.39 has no cipher)</td><td>3,646 of 3,750 = 97.2%</td></tr>
+  <tr><td>F</td><td>pp.40-49</td><td>3,937 of 4,436 = 88.8%</td></tr>
+  <tr><td>G</td><td>pp.50-57, 68-69</td><td>4,484 of 4,580 = 97.9%</td></tr>
+  <tr><td>H</td><td>pp.70-79</td><td>4,652 of 4,772 = 97.5%</td></tr>
+  <tr><td>I</td><td>pp.80-89</td><td>5,643 of 5,880 = 96.0%</td></tr>
+  <tr><td>J</td><td>pp.90-99</td><td>6,113 of 6,242 = 97.9%</td></tr>
+  <tr><td>K</td><td>pp.100, 100a, 102-109</td><td>4,589 of 4,686 = 97.9%</td></tr>
+  <tr><td>L</td><td>pp.110-119</td><td>4,324 of 4,417 = 97.9%</td></tr>
+  <tr><td>M</td><td>pp.120-123</td><td>1,857 of 1,924 = 96.5%</td></tr>
+  <tr><td>N</td><td>pp.161-170 (p.163 has no cipher)</td><td>3,672 of 4,081 = 90.0%</td></tr>
+  <tr><td>O</td><td>pp.171-178 (two pages numbered 175)</td><td>3,833 of 3,933 = 97.5%</td></tr>
+  <tr><td>All twelve</td><td></td><td>51,219 of 53,341 = 96.0%</td></tr>
+</table>
+<p>Every batch passed the shuffled-key control (0 of 5,000 at two seeds). A second blind reader copied four sample pages (pp.32, 82, 117 and 174) on its own: the two readings agree on 0.976 of signs. Both readers are Claude sessions. The script's re-count of batch K left out four margin lines on p.109 (27 letters); with them the whole pass is 51,244 of 53,368, still 96.0%. The repository's reading check gives the assembled German a clean share of 0.343, so these pages are <strong>decoded, not read</strong>, and are not counted in the words read above.</p>
+<p>Most slips trace to a few key entries that seem to be read the same wrong way (q/w, d/z, r for u/v, f for long s, g for d/k, c for r). Whether these are faults in the key table or in the readers' naming of the signs has not been checked; a corrected key would be a new, separately frozen version. The scribe's page numbers jump from 57 to 68 and from 100a to 102 with no image missing. Pages 179-180 are clear text: the cipher ends at p.178.</p>
+<p>The pages cover gold dissolved in aqua regis and fixed to a red powder; the "mercury of the sun"; the philosophers' stone through its black, peacock, white and red stages; digestion in horse-dung heat; Hermes' seal; oil and spirit of vitriol; pearls and corals dissolved; a reverberatory furnace; an "elixir hystericum"; and aurum potabile. <span class="tag">from Claude's reading; unchecked</span> The German reading and English translation of these pages are in the Zenodo record.</p>
+
 <h2>What remains uncertain</h2>
 <ul>
   <li>96 signs remain doubtful, mostly the three figure-4 shapes and the s-signs.</li>
@@ -118,12 +141,12 @@
   <li>Pages 16-18 rest on single readers from other model families (p.18 two, adjudicated) and are not rated.</li>
   <li>Signs on Kohn's sheet not yet seen in the text (for e, x, y and z) are untested. The project's check of pp.141-160 found one sign, written seven times as an unknown mark or as l, where the sense wants x (fix, borax, exempel); it has not yet been compared with Kohn's two x signs.</li>
   <li>The slips of the first pass on pp.141-160 (155 letters judged a slip, 16 no sense) stay in the decode of record; they have not been re-read on the images.</li>
-  <li>The rest of the cipher, pp.20-178, is not read, apart from the opening lines above and the three blind tests (pp.124-160); pp.161-170 are next.</li>
+  <li>pp.20-178 are decoded but not read: no doubtful sign in the 28 Nov batches has been checked on the images, and no person has read the German or the English.</li>
 </ul>
 
 <h2>Who did what</h2>
-<p><strong>Julius Kohn</strong> made the key in 1889. Malcolm McBratney (Brisbane), working with Claude (Anthropic), set up the key as a table and contributed the transcription, decode, reading and translation (issue #439). GPT-6 Astra/Sol and Gemini 4 Argon made the first passes of pp.16-18 and independent passes of pp.8-10 and 13, as he names them. Daniel Bourdeau found the manuscript for the catalogue (entry 1252). Brice Dudout verified the decode and re-read p.7 on the image (PR #570). The 16 Nov 2026 tests were checked at integration by a model session for the project (PR #686), as were the pp.141-160 batches of 24 Nov 2026 (PR #930), for which Claude Fable made the blind transcriptions and separate Claude sessions the judging.</p>
-<div class="caveat-box">Model sessions did the transcriptions, the decode and the reading. Brice Dudout's re-reading of p.7 used Claude Opus 5.5. No person has read the signs without AI, and no person has checked the pp.124-160 transcriptions, decodes or English.</div>
+<p><strong>Julius Kohn</strong> made the key in 1889. Malcolm McBratney (Brisbane), working with Claude (Anthropic), set up the key as a table and contributed the transcription, decode, reading and translation (issue #439). GPT-6 Astra/Sol and Gemini 4 Argon made the first passes of pp.16-18 and independent passes of pp.8-10 and 13, as he names them. Daniel Bourdeau found the manuscript for the catalogue (entry 1252). Brice Dudout verified the decode and re-read p.7 on the image (PR #570). The 16 Nov 2026 tests were checked at integration by a model session for the project (PR #686), as were the pp.141-160 batches of 24 Nov 2026 (PR #930), for which Claude Fable made the blind transcriptions and separate Claude sessions the judging. The pp.20-178 batches of 28 Nov 2026 (PR #1047) were transcribed, judged, read and translated by Claude Opus sessions; the maintainers have not yet reviewed them.</p>
+<div class="caveat-box">Model sessions did the transcriptions, the decode and the reading. Brice Dudout's re-reading of p.7 used Claude Opus 5.5. No person has read the signs without AI, and no person has checked the pp.20-178 transcriptions, decodes or English.</div>
 
 <h2>Sources</h2>
 <ol class="refs">
@@ -131,6 +154,8 @@
   <li>Cyphersolver, <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/gerlach1252">targets/gerlach1252</a>: key table, transcriptions, decodes, readings, translations, counts and checks.</li>
   <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/issues/439">issue #439</a> (the contribution) and <a href="https://github.com/dbourdeau/cyphersolver/pull/930">PR #930</a> (pp.141-160).</li>
   <li>Cyphersolver write-up: <a href="https://cyphersolver.com/gerlach1252.html">gerlach1252</a>.</li>
+  <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/pull/1047">PR #1047</a> (pp.20-123 and 161-178, open).</li>
+  <li>McBratney, M. (2026). Johann Gerlach, Occulta scripta chymica (Wellcome Collection MS.309, 1572-76): cipher pages 20-178 decoded with Julius Kohn's key of 1889. Zenodo. <a href="https://doi.org/10.5281/zenodo.24614771">10.5281/zenodo.24614771</a></li>
 </ol>
 </main>
 <footer class="site">Cipher Letters · Malcolm McBratney, Brisbane, with Claude (Anthropic) · Text CC BY 4.0 · Archive images are shown under each archive's own licence, named in each caption. · The checks were done with AI tools and no person checked each record by hand.</footer>

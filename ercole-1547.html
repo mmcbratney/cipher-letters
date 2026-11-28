@@ -17,10 +17,10 @@
 <h1>"The ladder of Spain into Italy": Ercole II d'Este to Claudio Ariosti, 8 January 1547</h1>
 <p class="dek">The Duke of Ferrara tells his secretary, then on a mission to Germany, to find out all he can about the rising at Genoa. Eight lines of the letter are in a sign-and-vowel cipher of the Este chancery. The key was recovered here from the ciphertext alone. No earlier key or reading was found in the places searched.</p>
 <div class="badges">
-  <span class="badge status">Read in part: 77 of 98 words (0.786)</span>
+  <span class="badge status">Read in part: 76 of 97 words (0.784)</span>
   <span class="badge">Key recovered from the ciphertext alone</span>
-  <span class="badge">Submitted, under review at Cyphersolver (PR #933)</span>
-  <span class="badge caveat">AI-assisted; no person has checked the transcription or the reading</span>
+  <span class="badge">Merged at Cyphersolver, 28 Nov 2026 (PR #933)</span>
+  <span class="badge caveat">AI-assisted; a second, independent transcription agrees on 94.6% of signs</span>
 </div>
 
 <div class="glance"><dl>
@@ -28,8 +28,8 @@
   <dt>From / to</dt><dd>Ercole II d'Este, Duke of Ferrara → his secretary Claudio Ariosti ("Secretario nostro domino Claudio")</dd>
   <dt>Held at</dt><dd>Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Ercole II d'Este, sfasc. I, cc. 16-17. Images: <a href="https://edl-jarvis.cultura.gov.it/meta/iiif/89e1bdc6-a46d-4627-9770-efbd17e544fb/manifest">IIIF manifest</a> (CC BY-NC-SA)</dd>
   <dt>Cipher</dt><dd>Signs for consonants, with a raised figure or a stroke giving the vowel after each; figures and some signs on the line for vowels; one code sign for a person. 276 signs, 435 letters decoded</dd>
-  <dt>Read</dt><dd>All 8 cipher lines decoded on one pass with the frozen key. 77 of 98 words read as sense (78.6%), every one-letter slip counted as unread</dd>
-  <dt>Record</dt><dd>Submitted, under review at Cyphersolver: <a href="https://github.com/dbourdeau/cyphersolver/pull/933">PR #933</a> (open); files on the <a href="https://github.com/mmcbratney/cyphersolver/tree/ercole1547-cipher/targets/ercole1547">contributor's branch, targets/ercole1547</a>. Catalogue entry 2160. Not yet checked or merged by the maintainers.</dd>
+  <dt>Read</dt><dd>All 8 cipher lines decoded on one pass with the frozen key. 76 of 97 words read as sense (78.4%), every one-letter slip counted as unread. A second pass after re-checking every doubt on the image gives 80 of 97 (82.5%); the first pass stays the figure of record</dd>
+  <dt>Record</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ercole1547">Cyphersolver, targets/ercole1547</a> (<a href="https://github.com/dbourdeau/cyphersolver/pull/933">PR #933</a>, merged 28 Nov 2026). Catalogue entry 2160.</dd>
 </dl></div>
 
 <h2>What is new and what was known</h2>
@@ -64,19 +64,20 @@
   <li><strong>Held-out lines:</strong> 81 of the 92 letters of lines 7-8 decode to sense on the first pass (88.0%).</li>
   <li><strong>Shuffled keys:</strong> 0 of 5,000 shuffled keys score as well as the real key, at each of two seeds, on the held-out lines, the training lines and the whole page.</li>
   <li><strong>The repository's own statistical test:</strong> pass (the reading scores well above random keys and above a key fitted to shuffled ciphertext).</li>
-  <li><strong>Not yet done:</strong> the maintainers' review of the pull request. A reading review first signed by the contributor's own session was withdrawn on 27 Nov 2026, because the maintainer records that at merge.</li>
+  <li><strong>Second pass (28 Nov 2026):</strong> every transcription doubt and the named places were re-checked on the image, a v2 transcription frozen and decoded once with the same key: 5 changes (7 signs), 80 of 97 words (0.825). The model session that did this had seen the decode, so it was not blind. "del Flisco" is not supported by the image.</li>
+  <li><strong>Brice Dudout's review (28 Nov 2026):</strong> reading review grade B. His own blind transcription of the page, frozen on 4 Nov 2026 before this work, agrees on 261 of 276 base signs (94.6%) and supports three of the second-pass changes (estraordinaria, circa, questo). Daniel Bourdeau merged the pull request the same day.</li>
 </ul>
 
 <h2>How much is read?</h2>
 <table>
   <tr><th></th><th>Read as sense</th></tr>
-  <tr><td>Words, by the read bar (slips and code signs as holes)</td><td>77 of 98 = 78.6%</td></tr>
-  <tr><td>Words, if the one-letter slips were counted as read</td><td>88 of 98 = 89.8%</td></tr>
+  <tr><td>Words, by the read bar (slips and code signs as holes), first pass of record</td><td>76 of 97 = 78.4%</td></tr>
+  <tr><td>Words, second pass (doubts re-checked on the image)</td><td>80 of 97 = 82.5%</td></tr>
   <tr><td>Letters, strict judge: lines 1-6</td><td>307 of 343 = 89.5%</td></tr>
   <tr><td>Letters, strict judge: held-out lines 7-8</td><td>81 of 92 = 88.0%</td></tr>
   <tr><td>Letters, strict judge: all 8 lines</td><td>388 of 435 = 89.2%</td></tr>
 </table>
-<p>The figure of record is 77 of 98 words. The 21 holes are 8 words with no sense, the code sign twice and 11 words with a one-letter slip: 8 + 2 + 11 = 21. Below 95% of words, so the letter is read in part, not read.</p>
+<p>The figure of record is 76 of 97 words (the repository's count, scripts/house_count.py; this page earlier gave 77 of 98 from an older count). 97 − 76 = 21 holes. Below 95% of words, so the letter is read in part, not read.</p>
 
 <h2>What remains uncertain</h2>
 <ul>
@@ -88,14 +89,14 @@
 </ul>
 
 <h2>Who did what</h2>
-<p>Malcolm McBratney (Brisbane) directed the work and set its rules, working with Claude (Anthropic): Claude Fable 5.2 transcribed and found the key; Claude Opus 5.5 judged the decode, made the reading and translation and assembled the folder. He sent it as PR #933, still open. Brice Dudout made the earlier attempt on this letter (5 Nov 2026). The letter is Cyphersolver catalogue entry 2160.</p>
-<div class="caveat-box">Model sessions made the transcription, the key, the judging, the reading and the English. No person has checked the signs, the reading or the translation, and the maintainers have not yet reviewed the pull request.</div>
+<p>Malcolm McBratney (Brisbane) directed the work and set its rules, working with Claude (Anthropic): Claude Fable 5.2 transcribed and found the key; Claude Opus 5.5 judged the decode, made the reading and translation and assembled the folder. He sent it as PR #933, merged on 28 Nov 2026 after Brice Dudout's review. Brice Dudout made the earlier attempt on this letter (5 Nov 2026). The letter is Cyphersolver catalogue entry 2160.</p>
+<div class="caveat-box">Model sessions made the transcription, the key, the judging, the reading and the English. Brice Dudout's independent transcription checks the signs; no person has checked the reading or the translation.</div>
 
 <h2>Sources</h2>
 <ol class="refs">
   <li>Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Ercole II d'Este, sfasc. I, cc. 16-17: <a href="https://edl-jarvis.cultura.gov.it/meta/iiif/89e1bdc6-a46d-4627-9770-efbd17e544fb/manifest">IIIF manifest</a>, CC BY-NC-SA.</li>
-  <li>Contributor's branch, <a href="https://github.com/mmcbratney/cyphersolver/tree/ercole1547-cipher/targets/ercole1547">targets/ercole1547</a>: prior-art record, transcription, key, decode, judging, controls, reading and translation.</li>
-  <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/pull/933">PR #933</a> (open).</li>
+  <li>Cyphersolver, <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ercole1547">targets/ercole1547</a>: prior-art record, transcription, key, decode, judging, controls, second pass, reading and translation.</li>
+  <li>Cyphersolver <a href="https://github.com/dbourdeau/cyphersolver/pull/933">PR #933</a> (merged 28 Nov 2026), with Brice Dudout's review.</li>
 </ol>
 </main>
 <footer class="site">Cipher Letters · Malcolm McBratney, Brisbane, with Claude (Anthropic) · Text CC BY 4.0 · Archive images are shown under each archive's own licence, named in each caption. · The checks were done with AI tools and no person checked each record by hand.</footer>
